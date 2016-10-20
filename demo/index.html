@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>vue-smoothscroll</title>
+    <script src="http://cdn.bootcss.com/vue/2.0.3/vue.js" charset="utf-8"></script>
+    <script src="../dist/vue-smoothscroll-websites.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div id="app">
+        <h1 id="messageh1" class="message">
+            {{ message }}
+        </h1>
+        <div class="message">
+            message
+        </div>
+        <button type="button" v-on:click="clickfunc()" class="button">
+    </div>
+    <style media="screen">
+        #app {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .message {
+            padding: 16px;
+            min-height: 600px;
+        }
+
+        .button {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+        Vue.use(vueSmoothScrollWebsites)
+        new Vue({
+            el: '#app',
+            data: {
+                message: 'Hello Vue smoothscroll!'
+            },
+            created :function(){
+                console.log("start");
+                this.$SmoothScrollWebSites({ stepSize: 20 });
+            },
+            methods :{
+              test:function(){
+                console.log('callback');
+              },
+              clickfunc :function(){
+              }
+            }
+        })
+    </script>
+</body>
+
+</html>
