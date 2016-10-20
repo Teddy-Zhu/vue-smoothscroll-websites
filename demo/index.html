@@ -16,7 +16,6 @@
         <div class="message">
             message
         </div>
-        <button type="button" v-on:click="clickfunc()" class="button">
     </div>
     <style media="screen">
         #app {
@@ -41,18 +40,14 @@
         new Vue({
             el: '#app',
             data: {
-                message: 'Hello Vue smoothscroll!'
+                message: 'Hello Vue vueSmoothScrollWebsites!'
             },
             created :function(){
                 console.log("start");
+                //this.$SmoothScrollWebSitesOptions =  ??
                 this.$SmoothScrollWebSites({ stepSize: 20 });
             },
             methods :{
-              test:function(){
-                console.log('callback');
-              },
-              clickfunc :function(){
-              }
             }
         })
     </script>
