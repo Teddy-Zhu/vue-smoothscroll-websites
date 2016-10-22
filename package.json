@@ -1,7 +1,7 @@
 {
   "name": "vue-smoothscroll-websites",
   "homepage": "http://www.silentgo.com",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "it&#x27;s a vuejs version of smoothscroll-websites",
   "author": "teddyzhu",
   "scripts": {
@@ -12,7 +12,7 @@
     "vue": "^2.0.3"
   },
   "readme": "README.md",
-  "main": "index.js",
+  "main": "dist/vue-smoothscroll-websites.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:Teddy-Zhu/vue-smoothscroll-websites.git"
